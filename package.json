@@ -1,6 +1,6 @@
 {
-  "name": "@slack/bolt",
-  "version": "2.4.1",
+  "name": "@christiaankruger/slack-bolt",
+  "version": "2.4.3",
   "description": "A framework for building Slack apps, fast.",
   "author": "Slack Technologies, Inc.",
   "license": "MIT",
@@ -36,11 +36,7 @@
     "coverage": "codecov",
     "watch": "npx nodemon --watch 'src' --ext 'ts' --exec npm run build"
   },
-  "repository": "slackapi/bolt",
-  "homepage": "https://slack.dev/bolt-js",
-  "bugs": {
-    "url": "https://github.com/slackapi/bolt-js/issues"
-  },
+  "repository": "christiaankruger/bolt-js",
   "dependencies": {
     "@slack/logger": "^2.0.0",
     "@slack/oauth": "^1.2.0",
@@ -83,5 +79,6 @@
   },
   "tsd": {
     "directory": "types-tests"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/christiaankruger" }
 }
